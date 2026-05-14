@@ -2,32 +2,45 @@ import styles from './Partner.module.css';
 
 export default function Partner() {
   return (
-    <section id="naim" className={styles.partner}>
+    <section id="socio" className={styles.partner}>
       <div className={`container ${styles.container}`}>
-        <div className={styles.imageWrapper}>
-          <div className={`${styles.imagePlaceholder} glass`}>
-            {/* Aquí iría la foto de Naim */}
-            <span className={styles.initial}>N</span>
+        <div className={`${styles.imageArea} animate-reveal`}>
+          <div className={styles.imageWrapper}>
+            <span>N</span>
+            <div className={styles.experienceBadge}>
+              <span>+3</span>
+              <p>Años Escalando</p>
+            </div>
           </div>
         </div>
-        <div className={styles.content}>
-          <h2 className="text-gradient">El Socio que tu Negocio Necesita</h2>
-          <h3 className={styles.name}>Naim — Growth Partner</h3>
-          <p className={styles.bio}>
-            No soy una agencia más. Soy tu socio estratégico. Me meto en las entrañas de tu negocio para entender qué funciona y qué no. 
+        
+        <div className={`${styles.content} animate-reveal delay-1`}>
+          <h2 className="text-gradient">Tu socio estratégico de crecimiento</h2>
+          <p className={styles.description}>
+            No soy una agencia convencional. Me convierto en una extensión de tu equipo, involucrándome 1:1 en las entrañas de tu operación para identificar y eliminar cuellos de botella.
           </p>
-          <p className={styles.bio}>
-            Mi metodología se basa en <strong>Data Real</strong>. Si estás estancado en la barrera de los 10-30k, es porque tus sistemas actuales ya no escalan. Mi trabajo es construir la infraestructura necesaria para llevarte a los 90k sin que tu operación colapse.
-          </p>
-          <div className={styles.highlights}>
-            <div className={styles.highlight}>
-              <span className={styles.check}>✓</span> Consultoría 1:1 Directa
+          
+          <div className={styles.features}>
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>📊</div>
+              <div>
+                <h4>Decisiones Basadas en Data</h4>
+                <p>Analizamos cada métrica de tu embudo para escalar lo que funciona y cortar lo que no.</p>
+              </div>
             </div>
-            <div className={styles.highlight}>
-              <span className={styles.check}>✓</span> Optimización Basada en Data
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>🏗️</div>
+              <div>
+                <h4>Infraestructura de Escalado</h4>
+                <p>Construimos los sistemas necesarios para que tu negocio soporte los 90k/mes sin colapsar.</p>
+              </div>
             </div>
-            <div className={styles.highlight}>
-              <span className={styles.check}>✓</span> Foco 100% en Facturación
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>💎</div>
+              <div>
+                <h4>Acompañamiento 1:1</h4>
+                <p>Acceso directo a mi consultoría para resolver problemas complejos en tiempo real.</p>
+              </div>
             </div>
           </div>
         </div>

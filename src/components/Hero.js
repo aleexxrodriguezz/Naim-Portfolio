@@ -6,13 +6,16 @@ export default function Hero() {
       <div className={styles.glowBg}></div>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h1 className={`${styles.title} animate-fade-in`}>
+          <p className={`${styles.eyebrow} animate-fade-in`}>
+            Ayudamos a infoproductores y negocios digitales a escalar sus operaciones mediante estrategias de crecimiento, adquisición de clientes y optimización comercial.
+          </p>
+          <h1 className={`${styles.title} animate-fade-in delay-100`}>
             Escala tu negocio de <span className="text-primary-gradient">10-30k a 60-90k</span> mes
           </h1>
-          <p className={`${styles.subtitle} animate-fade-in delay-100`}>
+          <p className={`${styles.subtitle} animate-fade-in delay-200`}>
             Me involucro 1:1 en tu estructura para escalar tu facturación basándome en Data. Sin fórmulas mágicas, solo estrategia pura.
           </p>
-          <div className={`${styles.actions} animate-fade-in delay-200`}>
+          <div className={`${styles.actions} animate-fade-in delay-300`}>
             <a href="https://wa.me/5491133230965" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
               Contactar por WhatsApp
             </a>

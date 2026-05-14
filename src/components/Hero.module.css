@@ -43,7 +43,7 @@
 
 .content {
   max-width: 900px;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .title {
@@ -86,3 +86,55 @@
   box-shadow: 0 15px 40px rgba(74, 222, 128, 0.4);
 }
 
+.statsPills {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.statPill {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.statPill:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.pillIcon {
+  font-size: 1rem;
+}
+
+.pillLabel {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 140px 0 60px;
+  }
+  
+  .statsPills {
+    gap: 0.75rem;
+  }
+  
+  .statPill {
+    padding: 0.5rem 1rem;
+  }
+  
+  .pillLabel {
+    font-size: 0.8rem;
+  }
+}

@@ -69,10 +69,6 @@
   line-height: 1.6;
 }
 
-.legalNotice a {
-  color: #fff;
-  text-decoration: none;
-}
 
 @media (max-width: 768px) {
   .top {

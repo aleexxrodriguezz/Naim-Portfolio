@@ -6,11 +6,11 @@ const cases = [
   {
     name: "Aripka Maia",
     role: "Coach & Astróloga",
-    growth: "74.6k → 412k seguidores",
+    growth: "Crecimiento Exponencial: 74.6k → 412k seguidores",
     details: [
       "Escalamiento de marca personal a nivel internacional.",
-      "Optimización de sistemas de conversión y embudos de venta.",
-      "Acompañamiento estratégico 1:1 para manejar crecimiento masivo.",
+      "Optimización de sistemas de adquisición de clientes.",
+      "Acompañamiento estratégico 1:1 en la toma de decisiones.",
       "Implementación de infraestructura comercial sólida."
     ],
     before: "/ig_before.png",
@@ -26,19 +26,26 @@ export default function TestimoniosPage() {
       <section className={styles.section}>
         <div className="container">
           <h1 className="text-gradient">Casos de Éxito</h1>
-          <p className={styles.subtitle}>Resultados reales y evidencia de nuestro acompañamiento estratégico.</p>
+          <p className={styles.subtitle}>Evidencia real de nuestro impacto en negocios digitales.</p>
 
           <div className={styles.casesList}>
             {cases.map((c, i) => (
               <div key={i} className={styles.caseItem}>
-                <div className={styles.caseHeader}>
-                  <h2>{c.name}</h2>
-                  <span className={styles.growth}>{c.growth}</span>
+                
+                <div className={styles.evidenceHeader}>
+                  <div className={styles.evidenceImgWrapper}>
+                    <img src={c.evidence} alt="Evidencia con Naim" className={styles.mainEvidence} />
+                  </div>
+                  <div className={styles.headerText}>
+                    <h2>{c.name}</h2>
+                    <p className={styles.role}>{c.role}</p>
+                    <span className={styles.growth}>{c.growth}</span>
+                  </div>
                 </div>
 
-                <div className={styles.layout}>
-                  <div className={styles.info}>
-                    <p className={styles.role}>{c.role}</p>
+                <div className={styles.detailsSection}>
+                  <div className={styles.pointsColumn}>
+                    <h3>Actividad Estratégica</h3>
                     <ul className={styles.points}>
                       {c.details.map((point, index) => (
                         <li key={index}>{point}</li>
@@ -46,21 +53,17 @@ export default function TestimoniosPage() {
                     </ul>
                   </div>
 
-                  <div className={styles.visuals}>
-                    <div className={styles.comparison}>
-                      <div className={styles.imgBlock}>
-                        <span>Estado Inicial</span>
-                        <img src={c.before} alt="Antes" />
+                  <div className={styles.resultsColumn}>
+                    <h3>Resultados Visuales</h3>
+                    <div className={styles.comparisonGrid}>
+                      <div className={styles.resultItem}>
+                        <img src={c.before} alt="Estado Inicial" />
+                        <span className={styles.label}>Antes (74.6k)</span>
                       </div>
-                      <div className={styles.imgBlock}>
-                        <span>Resultado Final</span>
-                        <img src={c.after} alt="Después" />
+                      <div className={styles.resultItem}>
+                        <img src={c.after} alt="Resultado Final" />
+                        <span className={styles.label}>Después (412k)</span>
                       </div>
-                    </div>
-                    
-                    <div className={styles.evidence}>
-                      <h3>Evidencia 1:1</h3>
-                      <img src={c.evidence} alt="Evidencia con Naim" />
                     </div>
                   </div>
                 </div>

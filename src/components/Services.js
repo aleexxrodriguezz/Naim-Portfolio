@@ -38,7 +38,9 @@ export default function Services() {
               <div className={styles.icon}>{service.icon}</div>
               <div className={styles.text}>
                 <h3>{service.title}</h3>
-                <p>{service.description}</p>
+                <div className={`${styles.descPill} glass`}>
+                  {service.description}
+                </div>
               </div>
             </div>
           ))}

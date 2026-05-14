@@ -21,18 +21,18 @@ export default function Hero() {
           </div>
         </div>
         
-        <div className={styles.stats}>
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>Data</span>
-            <span className={styles.statLabel}>Driven</span>
+        <div className={styles.statsPills}>
+          <div className={`${styles.statPill} glass`}>
+            <span className={styles.pillIcon}>🎯</span>
+            <span className={styles.pillLabel}>Estrategia Digital</span>
           </div>
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>1:1</span>
-            <span className={styles.statLabel}>Acompañamiento</span>
+          <div className={`${styles.statPill} glass`}>
+            <span className={styles.pillIcon}>📈</span>
+            <span className={styles.pillLabel}>Escalamiento Comercial</span>
           </div>
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>ROI</span>
-            <span className={styles.statLabel}>Optimizado</span>
+          <div className={`${styles.statPill} glass`}>
+            <span className={styles.pillIcon}>🚀</span>
+            <span className={styles.pillLabel}>Resultados Medibles</span>
           </div>
         </div>
       </div>

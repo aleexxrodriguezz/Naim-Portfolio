@@ -26,9 +26,9 @@ const cases = [
       "Kirka empezó con solo 3,000 seguidores.",
       "Desarrollo de estrategia de contenido viral.",
       "Acompañamiento en la profesionalización de la marca.",
-      "Sistemas de monetización de audiencia."
+      "monetización de audiencia."
     ],
-    before: null, // No explicitly named "before" for Kirka in downloads
+    before: null,
     after: "/kirka_after.jpg",
     evidence: "/kirka_evidence.jpg"
   },
@@ -40,16 +40,16 @@ const cases = [
       "Pasó de facturar 20k a 35/40k de forma recurrente.",
       "Optimización de procesos de venta y cierre.",
       "Escalamiento de infraestructura comercial.",
-      "Sistemas de adquisición de clientes cualificados."
+      "Adquisición de clientes cualificados."
     ],
-    before: null, // No explicitly named "before" for Tommy
+    before: null,
     after: "/tommy_after.jpg",
     evidence: "/tommy_evidence.jpg"
   }
 ];
 
 export default function TestimoniosPage() {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   return (
     <main className={styles.main}>
@@ -83,11 +83,13 @@ export default function TestimoniosPage() {
                   <div className={styles.contentLayout}>
                     <div className={styles.textPart}>
                       <p className={styles.role}>{c.role}</p>
-                      <ul className={styles.points}>
+                      <div className={styles.pillsGrid}>
                         {c.details.map((point, index) => (
-                          <li key={index}>{point}</li>
+                          <div key={index} className={`${styles.detailPill} glass`}>
+                            {point}
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
 
                     <div className={styles.visualsPart}>

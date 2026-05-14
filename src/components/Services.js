@@ -2,19 +2,24 @@ import styles from './Services.module.css';
 
 const services = [
   {
-    title: "Auditoría de Sistemas y Data",
-    description: "Analizamos tus métricas actuales quirúrgicamente para identificar fugas de facturación y cuellos de botella en tu embudo.",
-    icon: "📊"
+    title: "Estrategia de Crecimiento",
+    description: "Optimización de procesos y escalamiento comercial para negocios digitales.",
+    icon: "📈"
   },
   {
-    title: "Infraestructura de Escalado 1:1",
-    description: "Implementamos los sistemas y el equipo necesario para que tu negocio soporte una facturación de 90k sin colapsar.",
-    icon: "🏗️"
+    title: "Adquisición de Clientes",
+    description: "Sistemas de captación y optimización de conversión diseñados para escalar.",
+    icon: "🎯"
   },
   {
-    title: "Optimización de Conversión Real",
-    description: "Transformamos tu alcance en cashflow real. Estrategias de contenido diseñadas para vender, no solo para entretener.",
-    icon: "💎"
+    title: "Automatización",
+    description: "Implementación de procesos y estructura operativa para liberar cuellos de botella.",
+    icon: "⚙️"
+  },
+  {
+    title: "Acompañamiento 1:1",
+    description: "Trabajo personalizado enfocado en crecimiento sostenible y resultados medibles.",
+    icon: "🤝"
   }
 ];
 
@@ -23,8 +28,8 @@ export default function Services() {
     <section id="servicios" className={styles.services}>
       <div className={`container ${styles.container}`}>
         <div className={styles.header}>
-          <h2 className="text-gradient">Nuestra Metodología</h2>
-          <p className={styles.subtitle}>El sistema exacto que utilizamos para escalar negocios.</p>
+          <h2 className="text-gradient">¿Qué hacemos?</h2>
+          <p className={styles.subtitle}>Sistemas probados para transformar tu operación comercial.</p>
         </div>
         
         <div className={styles.grid}>

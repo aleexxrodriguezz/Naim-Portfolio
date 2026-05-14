@@ -6,16 +6,41 @@ const cases = [
   {
     name: "Aripka Maia",
     role: "Coach & Astróloga",
-    growth: "Crecimiento Exponencial: 74.6k → 412k seguidores",
+    growth: "74.6k → 412k seguidores",
     details: [
       "Escalamiento de marca personal a nivel internacional.",
       "Optimización de sistemas de adquisición de clientes.",
-      "Acompañamiento estratégico 1:1 en la toma de decisiones.",
-      "Implementación de infraestructura comercial sólida."
+      "Acompañamiento estratégico 1:1."
     ],
-    before: "/ig_before.png",
-    after: "/ig_after.png",
-    evidence: "/evidence.jpg"
+    before: "/test_1.jpg",
+    after: "/test_5.jpg",
+    evidence: "/test_8.jpg"
+  },
+  {
+    name: "Caso de Éxito 2",
+    role: "Negocio Digital",
+    growth: "Optimización de Conversión",
+    details: [
+      "Implementación de embudos de venta automatizados.",
+      "Mejora del ROI en pauta publicitaria.",
+      "Estructura operativa para escalado."
+    ],
+    before: "/test_2.jpg",
+    after: "/test_3.jpg",
+    evidence: "/test_4.jpg"
+  },
+  {
+    name: "Caso de Éxito 3",
+    role: "Infoproductor",
+    growth: "Escalamiento de Ventas",
+    details: [
+      "Lanzamiento de productos de alto valor.",
+      "Sistemas de captación de leads cualificados.",
+      "Optimización de infraestructura comercial."
+    ],
+    before: "/test_6.jpg",
+    after: "/test_7.jpg",
+    evidence: "/naim.png"
   }
 ];
 
@@ -25,16 +50,15 @@ export default function TestimoniosPage() {
       <Header />
       <section className={styles.section}>
         <div className="container">
-          <h1 className="text-gradient">Casos de Éxito</h1>
-          <p className={styles.subtitle}>Evidencia real de nuestro impacto en negocios digitales.</p>
+          <h1 className="text-gradient">Evidencia de Resultados</h1>
+          <p className={styles.subtitle}>Sistemas probados y acompañamiento directo 1:1.</p>
 
           <div className={styles.casesList}>
             {cases.map((c, i) => (
               <div key={i} className={styles.caseItem}>
-                
                 <div className={styles.evidenceHeader}>
                   <div className={styles.evidenceImgWrapper}>
-                    <img src={c.evidence} alt="Evidencia con Naim" className={styles.mainEvidence} />
+                    <img src={c.evidence} alt="Evidencia" className={styles.mainEvidence} />
                   </div>
                   <div className={styles.headerText}>
                     <h2>{c.name}</h2>
@@ -45,7 +69,7 @@ export default function TestimoniosPage() {
 
                 <div className={styles.detailsSection}>
                   <div className={styles.pointsColumn}>
-                    <h3>Actividad Estratégica</h3>
+                    <h3>Estrategia</h3>
                     <ul className={styles.points}>
                       {c.details.map((point, index) => (
                         <li key={index}>{point}</li>
@@ -54,15 +78,15 @@ export default function TestimoniosPage() {
                   </div>
 
                   <div className={styles.resultsColumn}>
-                    <h3>Resultados Visuales</h3>
+                    <h3>Resultados</h3>
                     <div className={styles.comparisonGrid}>
                       <div className={styles.resultItem}>
-                        <img src={c.before} alt="Estado Inicial" />
-                        <span className={styles.label}>Antes (74.6k)</span>
+                        <img src={c.before} alt="Antes" />
+                        <span className={styles.label}>Inicial</span>
                       </div>
                       <div className={styles.resultItem}>
-                        <img src={c.after} alt="Resultado Final" />
-                        <span className={styles.label}>Después (412k)</span>
+                        <img src={c.after} alt="Después" />
+                        <span className={styles.label}>Final</span>
                       </div>
                     </div>
                   </div>

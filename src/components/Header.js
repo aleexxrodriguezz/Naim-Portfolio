@@ -6,7 +6,7 @@ export default function Header() {
       <div className={`${styles.container} glass`}>
         <div className={styles.logo}>
           <a href="/">
-            <span className="text-primary">Growth</span>Partner
+            <span className="text-primary">Naim</span> Enterprises
           </a>
         </div>
         <nav className={styles.nav}>

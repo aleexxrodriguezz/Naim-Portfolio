@@ -30,6 +30,22 @@
   margin-bottom: 4rem;
 }
 
+.title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  line-height: 1.05;
+  margin-bottom: 2rem;
+  color: #fff;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
 
 .actions {
   display: flex;

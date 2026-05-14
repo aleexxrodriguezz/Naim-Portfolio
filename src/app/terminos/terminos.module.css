@@ -15,6 +15,32 @@
   margin-bottom: 1rem;
 }
 
+.legalSection {
+  margin-bottom: 4rem;
+}
+
+.legalSection h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary);
+}
+
+.legalSection h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--foreground);
+}
+
+.legalSection ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.legalSection li {
+  margin-bottom: 0.5rem;
+}
+
 .backBtn {
   display: inline-block;
   padding: 1rem 2rem;

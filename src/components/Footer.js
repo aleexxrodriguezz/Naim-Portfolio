@@ -17,7 +17,11 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} Growth Partner. Todos los derechos reservados.</p>
+          <p>©️ {new Date().getFullYear()} Todos los derechos reservados.</p>
+          <p className={styles.legalNotice}>
+            El contenido de este sitio tiene fines informativos y comerciales. Los resultados pueden variar según cada caso. 
+            Al utilizar este sitio aceptás nuestros <a href="/terminos">Términos y Condiciones</a> y <a href="/terminos">Política de Privacidad</a>.
+          </p>
         </div>
       </div>
     </footer>

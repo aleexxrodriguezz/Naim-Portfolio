@@ -32,12 +32,14 @@ export default function Services() {
           <p className={styles.subtitle}>Sistemas probados para transformar tu operación comercial.</p>
         </div>
         
-        <div className={styles.grid}>
+        <div className={styles.list}>
           {services.map((service, index) => (
-            <div key={index} className={`${styles.card} glass`}>
-              <div className={styles.iconWrapper}>{service.icon}</div>
-              <h3 className={styles.cardTitle}>{service.title}</h3>
-              <p className={styles.cardDesc}>{service.description}</p>
+            <div key={index} className={styles.item}>
+              <div className={styles.icon}>{service.icon}</div>
+              <div className={styles.text}>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           ))}
         </div>

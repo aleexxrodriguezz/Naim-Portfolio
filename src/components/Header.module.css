@@ -19,6 +19,8 @@
   max-width: 900px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
 }
 
 .logo a {
@@ -31,7 +33,7 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -66,14 +68,24 @@
 @media (max-width: 768px) {
   .container {
     width: 95%;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  
+  .logo a {
+    font-size: 0.9rem;
   }
   
   .nav {
-    gap: 1rem;
+    gap: 0.75rem;
   }
   
   .link {
-    display: none;
+    font-size: 0.75rem;
+  }
+  
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
   }
 }

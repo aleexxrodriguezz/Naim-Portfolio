@@ -44,6 +44,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   color: #fff;
+  text-align: left;
 }
 
 .accordionHeader:hover {
@@ -105,7 +106,7 @@
 }
 
 .active .accordionContent {
-  max-height: 3000px;
+  max-height: 4000px;
   opacity: 1;
   padding-bottom: 4rem;
   pointer-events: auto;
@@ -113,7 +114,7 @@
 
 .contentLayout {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 5rem;
   padding-top: 2rem;
 }
@@ -197,6 +198,36 @@
 }
 
 @media (max-width: 850px) {
+  .main {
+    padding-top: 100px;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  .subtitle {
+    margin-bottom: 3rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .accordionHeader {
+    padding: 1.5rem 0;
+  }
+  
+  .headerTitle {
+    gap: 1rem;
+  }
+  
+  .headerTitle h2 {
+    font-size: 1.25rem;
+  }
+  
+  .index {
+    font-size: 0.75rem;
+  }
+  
   .headerInfo .badge {
     display: none;
   }
@@ -204,5 +235,22 @@
   .contentLayout {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+  
+  .detailPill {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+  
+  .visualsPart {
+    gap: 2rem;
+  }
+  
+  .evidenceImg {
+    max-width: 100%;
+  }
+  
+  .resultItem img {
+    max-width: 100%;
   }
 }

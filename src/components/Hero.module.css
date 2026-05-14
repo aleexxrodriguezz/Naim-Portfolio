@@ -30,22 +30,6 @@
   margin-bottom: 4rem;
 }
 
-.description {
-  color: var(--primary);
-  font-size: 0.9rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-
-.title {
-  font-size: clamp(2.5rem, 7vw, 4.5rem);
-  line-height: 1.1;
-  margin-bottom: 3rem;
-  color: #fff;
-}
 
 .actions {
   display: flex;

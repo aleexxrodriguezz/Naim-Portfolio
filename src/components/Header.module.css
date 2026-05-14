@@ -23,11 +23,6 @@
   text-decoration: none;
 }
 
-.nav {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
 
 .btn {
   background: var(--primary);

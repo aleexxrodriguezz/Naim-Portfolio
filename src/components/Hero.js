@@ -5,19 +5,6 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.glowBg}></div>
       <div className={`container ${styles.container} animate`}>
-        <div className={styles.content}>
-          <p className={styles.description}>
-            Ayudamos a infoproductores y negocios digitales a escalar sus operaciones mediante estrategias de crecimiento, adquisición de clientes y optimización comercial.
-          </p>
-          <h1 className={styles.title}>
-            Escala tu facturación de <span className="text-primary">10k a 90k</span> mes
-          </h1>
-          <div className={styles.actions}>
-            <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
-              Agendar Consulta Estratégica
-            </a>
-          </div>
-        </div>
         
         <div className={styles.stats}>
           <div className={styles.statItem}>

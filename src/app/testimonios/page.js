@@ -1,3 +1,5 @@
+"use client";
+import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from './testimonios.module.css';
@@ -12,81 +14,101 @@ const cases = [
       "Optimización de sistemas de adquisición de clientes.",
       "Acompañamiento estratégico 1:1."
     ],
-    before: "/test_1.jpg",
-    after: "/test_5.jpg",
-    evidence: "/test_8.jpg"
+    before: "/aripka_before.jpg",
+    after: "/aripka_after.jpg",
+    evidence: "/aripka_evidence.jpg"
   },
   {
-    name: "Caso de Éxito 2",
-    role: "Negocio Digital",
-    growth: "Optimización de Conversión",
+    name: "Kirka Athletic",
+    role: "Fitness & Lifestyle",
+    growth: "3,000 → Crecimiento exponencial en seguidores",
     details: [
-      "Implementación de embudos de venta automatizados.",
-      "Mejora del ROI en pauta publicitaria.",
-      "Estructura operativa para escalado."
+      "Kirka empezó con solo 3,000 seguidores.",
+      "Desarrollo de estrategia de contenido viral.",
+      "Acompañamiento en la profesionalización de la marca.",
+      "Sistemas de monetización de audiencia."
     ],
-    before: "/test_2.jpg",
-    after: "/test_3.jpg",
-    evidence: "/test_4.jpg"
+    before: null, // No explicitly named "before" for Kirka in downloads
+    after: "/kirka_after.jpg",
+    evidence: "/kirka_evidence.jpg"
   },
   {
-    name: "Caso de Éxito 3",
-    role: "Infoproductor",
-    growth: "Escalamiento de Ventas",
+    name: "Tommy Castellanos",
+    role: "Negocios Digitales",
+    growth: "20k → 35/40k mes",
     details: [
-      "Lanzamiento de productos de alto valor.",
-      "Sistemas de captación de leads cualificados.",
-      "Optimización de infraestructura comercial."
+      "Pasó de facturar 20k a 35/40k de forma recurrente.",
+      "Optimización de procesos de venta y cierre.",
+      "Escalamiento de infraestructura comercial.",
+      "Sistemas de adquisición de clientes cualificados."
     ],
-    before: "/test_6.jpg",
-    after: "/test_7.jpg",
-    evidence: "/naim.png"
+    before: null, // No explicitly named "before" for Tommy
+    after: "/tommy_after.jpg",
+    evidence: "/tommy_evidence.jpg"
   }
 ];
 
 export default function TestimoniosPage() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <main className={styles.main}>
       <Header />
       <section className={styles.section}>
         <div className="container">
-          <h1 className="text-gradient">Evidencia de Resultados</h1>
-          <p className={styles.subtitle}>Sistemas probados y acompañamiento directo 1:1.</p>
+          <h1 className="text-gradient">Casos de Éxito</h1>
+          <p className={styles.subtitle}>Sistemas probados y evidencia real de acompañamiento 1:1.</p>
 
-          <div className={styles.casesList}>
+          <div className={styles.accordion}>
             {cases.map((c, i) => (
-              <div key={i} className={styles.caseItem}>
-                <div className={styles.evidenceHeader}>
-                  <div className={styles.evidenceImgWrapper}>
-                    <img src={c.evidence} alt="Evidencia" className={styles.mainEvidence} />
-                  </div>
-                  <div className={styles.headerText}>
+              <div 
+                key={i} 
+                className={`${styles.accordionItem} ${activeIndex === i ? styles.active : ''}`}
+              >
+                <button 
+                  className={styles.accordionHeader} 
+                  onClick={() => setActiveIndex(activeIndex === i ? null : i)}
+                >
+                  <div className={styles.headerTitle}>
+                    <span className={styles.index}>0{i + 1}</span>
                     <h2>{c.name}</h2>
-                    <p className={styles.role}>{c.role}</p>
-                    <span className={styles.growth}>{c.growth}</span>
                   </div>
-                </div>
-
-                <div className={styles.detailsSection}>
-                  <div className={styles.pointsColumn}>
-                    <h3>Estrategia</h3>
-                    <ul className={styles.points}>
-                      {c.details.map((point, index) => (
-                        <li key={index}>{point}</li>
-                      ))}
-                    </ul>
+                  <div className={styles.headerInfo}>
+                    <span className={styles.badge}>{c.growth}</span>
+                    <span className={styles.arrow}>{activeIndex === i ? '−' : '+'}</span>
                   </div>
+                </button>
 
-                  <div className={styles.resultsColumn}>
-                    <h3>Resultados</h3>
-                    <div className={styles.comparisonGrid}>
-                      <div className={styles.resultItem}>
-                        <img src={c.before} alt="Antes" />
-                        <span className={styles.label}>Inicial</span>
+                <div className={styles.accordionContent}>
+                  <div className={styles.contentLayout}>
+                    <div className={styles.textPart}>
+                      <p className={styles.role}>{c.role}</p>
+                      <ul className={styles.points}>
+                        {c.details.map((point, index) => (
+                          <li key={index}>{point}</li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className={styles.visualsPart}>
+                      <div className={styles.mainEvidenceWrapper}>
+                        <p className={styles.label}>Evidencia 1:1</p>
+                        <img src={c.evidence} alt="Evidencia" className={styles.evidenceImg} />
                       </div>
-                      <div className={styles.resultItem}>
-                        <img src={c.after} alt="Después" />
-                        <span className={styles.label}>Final</span>
+                      
+                      <div className={styles.resultsGrid}>
+                        {c.before && (
+                          <div className={styles.resultItem}>
+                            <p className={styles.label}>Antes</p>
+                            <img src={c.before} alt="Antes" />
+                          </div>
+                        )}
+                        {c.after && (
+                          <div className={styles.resultItem}>
+                            <p className={styles.label}>{c.before ? 'Después' : 'Resultado'}</p>
+                            <img src={c.after} alt="Después" />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

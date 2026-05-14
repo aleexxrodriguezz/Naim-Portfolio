@@ -164,6 +164,7 @@
 
 .evidenceImg {
   width: 100%;
+  max-width: 450px;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -182,6 +183,7 @@
 
 .resultItem img {
   width: 100%;
+  max-width: 250px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }

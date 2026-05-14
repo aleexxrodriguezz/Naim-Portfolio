@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 8rem 0;
+  min-height: 100vh;
+}
+
+.content {
+  margin: 4rem 0;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.content h2 {
+  color: var(--foreground);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.backBtn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--surface);
+  border: 1px solid var(--surface-border);
+  border-radius: 50px;
+  color: var(--foreground);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.backBtn:hover {
+  border-color: var(--primary);
+  transform: translateX(-5px);
+}

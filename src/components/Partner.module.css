@@ -1,109 +1,65 @@
 .partner {
-  padding: 10rem 0;
-  position: relative;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 6rem;
-  align-items: center;
-}
-
-.imageArea {
-  position: relative;
-}
-
-.imageWrapper {
-  aspect-ratio: 4/5;
-  background: var(--surface);
-  border-radius: 40px;
-  overflow: hidden;
-  border: 1px solid var(--surface-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  color: var(--primary);
-  position: relative;
-}
-
-.experienceBadge {
-  position: absolute;
-  bottom: 2rem;
-  right: -2rem;
-  background: var(--primary);
-  color: #000;
-  padding: 1.5rem;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px var(--primary-glow);
+  padding: 80px 0;
   text-align: center;
 }
 
-.experienceBadge span {
-  display: block;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 }
 
-.experienceBadge p {
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.imageArea {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--surface-border);
+  box-shadow: 0 0 40px rgba(74, 222, 128, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.content {
+  max-width: 700px;
 }
 
 .content h2 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
-  margin-bottom: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1.5rem;
 }
 
 .description {
-  font-size: 1.2rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 2.5rem;
-}
-
-.features {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.feature {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.25rem;
-}
-
-.featureIcon {
-  color: var(--primary);
-  font-size: 1.25rem;
-  margin-top: 0.2rem;
-}
-
-.feature h4 {
   font-size: 1.1rem;
-  margin-bottom: 0.25rem;
-}
-
-.feature p {
   color: var(--text-muted);
-  font-size: 0.95rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
 }
 
-@media (max-width: 992px) {
-  .container {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-  }
-  
+.primaryBtn {
+  background: var(--primary);
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
   .imageArea {
-    max-width: 450px;
-    margin: 0 auto;
-  }
-  
-  .highlight {
-    justify-content: center;
+    width: 180px;
+    height: 180px;
   }
 }

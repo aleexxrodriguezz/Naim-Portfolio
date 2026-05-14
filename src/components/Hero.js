@@ -4,39 +4,33 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.glowBg}></div>
-      <div className={`container ${styles.container}`}>
+      <div className={`container ${styles.container} animate`}>
         <div className={styles.content}>
-          <p className={`${styles.eyebrow} animate-reveal delay-1`}>
-            Growth Partner para Infoproductores
+          <p className={styles.description}>
+            Ayudamos a infoproductores y negocios digitales a escalar sus operaciones mediante estrategias de crecimiento, adquisición de clientes y optimización comercial.
           </p>
-          <h1 className={`${styles.title} animate-reveal delay-2`}>
-            Escala tu negocio de <span className="text-primary-gradient">10-30k a 60-90k</span> mes
+          <h1 className={styles.title}>
+            Escala tu facturación de <span className="text-primary">10k a 90k</span> mes
           </h1>
-          <p className={`${styles.subtitle} animate-reveal delay-3`}>
-            Me involucro 1:1 en tu estructura para escalar tu facturación basándome en Data. Sin fórmulas mágicas, solo estrategia pura.
-          </p>
-          <div className={`${styles.actions} animate-reveal delay-3`}>
+          <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
               Agendar Consulta Estratégica
-            </a>
-            <a href="https://instagram.com/Naimlares" target="_blank" rel="noopener noreferrer" className={styles.secondaryBtn}>
-              Ver Instagram
             </a>
           </div>
         </div>
         
-        <div className={`${styles.stats} animate-reveal delay-3`}>
-          <div className={`${styles.statCard} glass`}>
-            <h3>+500%</h3>
-            <p>ROI Promedio</p>
+        <div className={styles.stats}>
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>+500%</span>
+            <span className={styles.statLabel}>ROI</span>
           </div>
-          <div className={`${styles.statCard} glass`}>
-            <h3>60k+</h3>
-            <p>Escalado Mensual</p>
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>1:1</span>
+            <span className={styles.statLabel}>Socio Directo</span>
           </div>
-          <div className={`${styles.statCard} glass`}>
-            <h3>1:1</h3>
-            <p>Acompañamiento</p>
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>Data</span>
+            <span className={styles.statLabel}>Driven</span>
           </div>
         </div>
       </div>

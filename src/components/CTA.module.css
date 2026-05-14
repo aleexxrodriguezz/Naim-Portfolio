@@ -1,106 +1,47 @@
 .cta {
-  padding: 10rem 0;
+  padding: 100px 0;
 }
 
 .container {
-  padding: 6rem 2rem;
-  border-radius: 40px;
   text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.container::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(74, 222, 128, 0.08) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
-.buttonGroup {
-  display: flex;
-  gap: 1.25rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.content h2 {
+.container h2 {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 1.1;
 }
 
 .subtitle {
   color: var(--text-muted);
   font-size: 1.25rem;
-  line-height: 1.6;
-  max-width: 550px;
+  max-width: 600px;
 }
 
-.btn, .btnSecondary {
-  padding: 1.1rem 2.5rem;
-  border-radius: 100px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  transition: var(--transition-smooth);
-  display: inline-block;
-  cursor: pointer;
+.actions {
+  margin-top: 1rem;
 }
 
-.btn {
+.primaryBtn {
   background: var(--primary);
   color: #000;
-  box-shadow: 0 8px 24px var(--primary-glow);
+  padding: 1.2rem 2.5rem;
+  border-radius: 100px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
-.btn:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 12px 32px var(--primary-glow);
-  background: #22c55e;
-}
-
-.btnSecondary {
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--foreground);
-  border: 1px solid var(--surface-border);
-}
-
-.btnSecondary:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-4px);
+.primaryBtn:hover {
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
-  .cta {
-    padding: 6rem 0;
-  }
-  
-  .container {
-    padding: 4rem 1.5rem;
-    border-radius: 32px;
-  }
-  
-  .buttonGroup {
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .btn, .btnSecondary {
+  .primaryBtn {
     width: 100%;
   }
 }

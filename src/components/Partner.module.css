@@ -35,6 +35,16 @@
   margin-top: 1rem;
 }
 
+.role {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
 .content h2 {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1.5rem;

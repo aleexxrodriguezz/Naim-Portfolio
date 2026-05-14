@@ -8,11 +8,6 @@ export default function Partner() {
           <img src="/naim.png" alt="Naim" className={styles.image} />
         </div>
         
-        <div className={styles.content}>
-          <h2 className="text-gradient">Tu socio estratégico de crecimiento</h2>
-          <p className={styles.description}>
-            Me involucro 1:1 en las entrañas de tu operación para identificar y eliminar cuellos de botella mediante data real e infraestructura de escalado sólida.
-          </p>
           <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
               Agendar Llamada Estratégica

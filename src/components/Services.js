@@ -3,6 +3,7 @@ import styles from './Services.module.css';
 const services = [
   {
     title: "Estrategia de Crecimiento",
+    description: "Optimización de procesos y gestión comercial para negocios digitales.",
     icon: "📈"
   },
   {

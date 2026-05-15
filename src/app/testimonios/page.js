@@ -10,8 +10,8 @@ const cases = [
     role: "Coach & Astróloga",
     growth: "74.6k → 412k seguidores",
     details: [
-      "Escalamiento de marca personal a nivel internacional.",
-      "Optimización de sistemas de adquisición de clientes.",
+      "Mejora del posicionamiento de marca personal a nivel internacional.",
+      "Optimización de estrategias de adquisición de clientes.",
       "Acompañamiento estratégico 1:1."
     ],
     before: "/aripka_before.jpg",
@@ -21,30 +21,16 @@ const cases = [
   {
     name: "Kirka Athletic",
     role: "Fitness & Lifestyle",
-    growth: "3,000 → Crecimiento exponencial en seguidores",
+    growth: "3,000 → Crecimiento en audiencia",
     details: [
-      "Kirka empezó con solo 3,000 seguidores.",
-      "Desarrollo de estrategia de contenido viral.",
+      "Kirka inició con una base de 3,000 seguidores.",
+      "Desarrollo de estrategia de contenido y alcance.",
       "Acompañamiento en la profesionalización de la marca.",
-      "monetización de audiencia."
+      "Optimización de procesos de monetización."
     ],
     before: null,
     after: "/kirka_after.jpg",
     evidence: "/kirka_evidence.jpg"
-  },
-  {
-    name: "Tommy Castellanos",
-    role: "Negocios Digitales",
-    growth: "20k → 35/40k mes",
-    details: [
-      "Pasó de facturar 20k a 35/40k de forma recurrente.",
-      "Optimización de procesos de venta y cierre.",
-      "Escalamiento de infraestructura comercial.",
-      "Adquisición de clientes cualificados."
-    ],
-    before: null,
-    after: "/tommy_after.jpg",
-    evidence: "/tommy_evidence.jpg"
   }
 ];
 
@@ -57,7 +43,7 @@ export default function TestimoniosPage() {
       <section className={styles.section}>
         <div className="container">
           <h1 className="text-gradient">Casos de Éxito</h1>
-          <p className={styles.subtitle}>Sistemas probados y evidencia real de acompañamiento 1:1.</p>
+          <p className={styles.subtitle}>Metodologías y procesos diseñados para mejorar la gestión comercial y operativa de negocios digitales.</p>
 
           <div className={styles.accordion}>
             {cases.map((c, i) => (

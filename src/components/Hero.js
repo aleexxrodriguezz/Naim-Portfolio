@@ -32,7 +32,6 @@ export default function Hero() {
           </div>
           <div className={`${styles.statPill} glass`}>
             <span className={styles.pillIcon}>🚀</span>
-            <span className={styles.pillLabel}>Indicadores Operativos</span>
           </div>
         </div>
       </div>

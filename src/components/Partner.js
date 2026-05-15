@@ -12,6 +12,7 @@ export default function Partner() {
           <span className={styles.role}>Growth Partner</span>
           <h2 className="text-gradient">Naim</h2>
           <p className={styles.description}>
+            Acompaño a creadores y marcas a mejorar su posicionamiento, estructura comercial y procesos de crecimiento mediante metodologías personalizadas y seguimiento directo 1:1.
           </p>
           <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>

@@ -12,7 +12,7 @@ export default function Hero() {
             <span className="text-primary">Negocio Digital</span>
           </h1>
           <p className={styles.description}>
-            Especialistas en optimizar la estrategia comercial de negocios digitales mediante consultoría estratégica, adquisición de clientes e infraestructura operativa.
+            Consultoría estratégica para negocios digitales en etapa de crecimiento mediante la optimización de procesos comerciales, adquisición de clientes y estructura operativa.
           </p>
           <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
@@ -27,11 +27,12 @@ export default function Hero() {
             <span className={styles.pillLabel}>Estrategia Digital</span>
           </div>
           <div className={`${styles.statPill} glass`}>
-            <span className={styles.pillIcon}>📈</span>
-            <span className={styles.pillLabel}>Escalamiento Comercial</span>
+            <span className={styles.pillIcon}>📊</span>
+            <span className={styles.pillLabel}>Optimización Comercial</span>
           </div>
           <div className={`${styles.statPill} glass`}>
-            <span className={styles.pillIcon}>🚀</span>
+            <span className={styles.pillIcon}>📈</span>
+            <span className={styles.pillLabel}>Seguimiento de Indicadores</span>
           </div>
         </div>
       </div>

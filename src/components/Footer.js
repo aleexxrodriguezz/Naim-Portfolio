@@ -6,7 +6,10 @@ export default function Footer() {
       <div className={`container ${styles.container}`}>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <span className="text-primary-gradient">Naim</span> Enterprises
+            <div className={styles.logoName}>
+              <span className="text-primary-gradient">Naim</span> Enterprises
+            </div>
+            <p className={styles.desc}>Acompañamos a creadores y marcas a mejorar su posicionamiento, estructura comercial y procesos de crecimiento.</p>
           </div>
           <div className={styles.socials}>
             <a href="https://wa.me/5491133230965" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>

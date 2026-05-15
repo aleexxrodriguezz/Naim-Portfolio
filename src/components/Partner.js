@@ -12,7 +12,6 @@ export default function Partner() {
           <span className={styles.role}>Growth Partner</span>
           <h2 className="text-gradient">Naim</h2>
           <p className={styles.description}>
-            Me involucro 1:1 en las entrañas de tu operación para identificar y eliminar cuellos de botella mediante data real e infraestructura de escalado sólida.
           </p>
           <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>

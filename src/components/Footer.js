@@ -7,7 +7,6 @@ export default function Footer() {
         <div className={styles.top}>
           <div className={styles.brand}>
             <span className="text-primary-gradient">Naim</span> Enterprises
-            <p className={styles.desc}>Potenciando creadores y marcas para dominar su industria.</p>
           </div>
           <div className={styles.socials}>
             <a href="https://wa.me/5491133230965" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>

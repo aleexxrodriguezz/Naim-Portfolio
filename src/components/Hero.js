@@ -8,11 +8,11 @@ export default function Hero() {
         <div className={styles.content}>
           <div className={styles.badge}>Growth Partner</div>
           <h1 className={styles.title}>
-            Tu Socio Estratégico en <br />
-            <span className="text-primary">Crecimiento y Escalamiento</span>
+            Optimiza la Estrategia Comercial de tu <br />
+            <span className="text-primary">Negocio Digital</span>
           </h1>
           <p className={styles.description}>
-            Especialistas en escalar infoproductores y negocios digitales mediante estrategias de adquisición de clientes y optimización de infraestructura comercial.
+            Especialistas en optimizar la estrategia comercial de negocios digitales mediante consultoría estratégica, adquisición de clientes e infraestructura operativa.
           </p>
           <div className={styles.actions}>
             <a href="https://calendly.com/naimdario6/30min" target="_blank" rel="noopener noreferrer" className={styles.primaryBtn}>
@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
           <div className={`${styles.statPill} glass`}>
             <span className={styles.pillIcon}>🚀</span>
-            <span className={styles.pillLabel}>Resultados Medibles</span>
+            <span className={styles.pillLabel}>Indicadores Operativos</span>
           </div>
         </div>
       </div>

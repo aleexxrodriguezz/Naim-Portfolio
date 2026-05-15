@@ -8,7 +8,7 @@ const services = [
   },
   {
     title: "Adquisición de Clientes",
-    description: "Sistemas de captación y optimización de conversión diseñados para escalar.",
+    description: "Estrategias de captación y optimización de conversión adaptadas al modelo de negocio de cada cliente.",
     icon: "🎯"
   },
   {
@@ -18,7 +18,7 @@ const services = [
   },
   {
     title: "Acompañamiento 1:1",
-    description: "Trabajo personalizado enfocado en crecimiento sostenible y resultados medibles.",
+    description: "Trabajo personalizado enfocado en el seguimiento de indicadores comerciales y operativos.",
     icon: "🤝"
   }
 ];
@@ -29,7 +29,7 @@ export default function Services() {
       <div className={`container ${styles.container}`}>
         <div className={styles.header}>
           <h2 className="text-gradient">¿Qué hacemos?</h2>
-          <p className={styles.subtitle}>Sistemas probados para transformar tu operación comercial.</p>
+          <p className={styles.subtitle}>Metodologías y procesos diseñados para mejorar la gestión comercial y operativa de negocios digitales.</p>
         </div>
         
         <div className={styles.list}>
